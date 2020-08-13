@@ -17,6 +17,10 @@ app.get('/', (req, res, next) => {
     res.send(layout(''))
 })
 
+app.get('/', (req, res, next) => {
+    res.redirect('/wiki')
+})
+
 let PORT = 3000;
 
 const init = async () => {
